@@ -4,7 +4,7 @@ var items = ["dog", "cat", "rabbit", "hamster", "skunk", "goldfish", "bird", "fe
 
 function search(item, limit) {
     $("#images").empty();
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + item + "&api_key=" + apiKey + "&limit=" + limit;
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + item + "&api_key=" + apiKey + "&limit=" + limit;
     $.ajax({
         url: queryURL,
         method: "GET"
